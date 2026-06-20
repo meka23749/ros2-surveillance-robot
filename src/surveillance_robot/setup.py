@@ -29,6 +29,7 @@ setup(
             'camera_sensor = surveillance_robot.camera_sensor:main',
             'anomaly_detector = surveillance_robot.anomaly_detector:main',
             'surveillance_manager = surveillance_robot.surveillance_manager:main',
+            'visualizer = surveillance_robot.visualizer:main',
         ],
     },
 )

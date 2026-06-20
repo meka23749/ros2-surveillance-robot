@@ -28,4 +28,10 @@ def generate_launch_description():
             name='surveillance_manager',
             output='screen'
         ),
+        Node(
+            package='surveillance_robot',
+            executable='visualizer',
+            name='visualizer',
+            output='screen'
+        ),
     ])
