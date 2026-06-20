@@ -8,6 +8,7 @@ setup.py
 ../../build/surveillance_robot/surveillance_robot.egg-info/requires.txt
 ../../build/surveillance_robot/surveillance_robot.egg-info/top_level.txt
 ../../build/surveillance_robot/surveillance_robot.egg-info/zip-safe
+../../launch/surveillance.launch.py
 resource/surveillance_robot
 surveillance_robot/__init__.py
 surveillance_robot/anomaly_detector.py
