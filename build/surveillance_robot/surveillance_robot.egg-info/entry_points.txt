@@ -1,0 +1,5 @@
+[console_scripts]
+anomaly_detector = surveillance_robot.anomaly_detector:main
+camera_sensor = surveillance_robot.camera_sensor:main
+robot_navigator = surveillance_robot.robot_navigator:main
+surveillance_manager = surveillance_robot.surveillance_manager:main

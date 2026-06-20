@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: surveillance-robot
+Version: 0.0.1
+Summary: Autonomous industrial surveillance robot with ROS2 Jazzy
+Maintainer: Steve Meka
+Maintainer-email: steve@example.com
+License: MIT

@@ -1,0 +1,49 @@
+[1.193s] Invoking command in '/home/steve/ros2-surveillance-robot/src/surveillance_robot': PYTHONPATH=/home/steve/ros2-surveillance-robot/build/surveillance_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/surveillance_robot build --build-base /home/steve/ros2-surveillance-robot/build/surveillance_robot/build install --record /home/steve/ros2-surveillance-robot/build/surveillance_robot/install.log --single-version-externally-managed install_data
+[1.446s] running egg_info
+[1.447s] creating ../../build/surveillance_robot/surveillance_robot.egg-info
+[1.465s] writing ../../build/surveillance_robot/surveillance_robot.egg-info/PKG-INFO
+[1.465s] writing dependency_links to ../../build/surveillance_robot/surveillance_robot.egg-info/dependency_links.txt
+[1.465s] writing entry points to ../../build/surveillance_robot/surveillance_robot.egg-info/entry_points.txt
+[1.465s] writing requirements to ../../build/surveillance_robot/surveillance_robot.egg-info/requires.txt
+[1.466s] writing top-level names to ../../build/surveillance_robot/surveillance_robot.egg-info/top_level.txt
+[1.466s] writing manifest file '../../build/surveillance_robot/surveillance_robot.egg-info/SOURCES.txt'
+[1.503s] reading manifest file '../../build/surveillance_robot/surveillance_robot.egg-info/SOURCES.txt'
+[1.503s] writing manifest file '../../build/surveillance_robot/surveillance_robot.egg-info/SOURCES.txt'
+[1.504s] running build
+[1.504s] running build_py
+[1.504s] creating /home/steve/ros2-surveillance-robot/build/surveillance_robot/build
+[1.505s] creating /home/steve/ros2-surveillance-robot/build/surveillance_robot/build/lib
+[1.505s] creating /home/steve/ros2-surveillance-robot/build/surveillance_robot/build/lib/surveillance_robot
+[1.506s] copying surveillance_robot/surveillance_manager.py -> /home/steve/ros2-surveillance-robot/build/surveillance_robot/build/lib/surveillance_robot
+[1.506s] copying surveillance_robot/camera_sensor.py -> /home/steve/ros2-surveillance-robot/build/surveillance_robot/build/lib/surveillance_robot
+[1.507s] copying surveillance_robot/anomaly_detector.py -> /home/steve/ros2-surveillance-robot/build/surveillance_robot/build/lib/surveillance_robot
+[1.507s] copying surveillance_robot/robot_navigator.py -> /home/steve/ros2-surveillance-robot/build/surveillance_robot/build/lib/surveillance_robot
+[1.507s] copying surveillance_robot/__init__.py -> /home/steve/ros2-surveillance-robot/build/surveillance_robot/build/lib/surveillance_robot
+[1.507s] running install
+[1.513s] running install_lib
+[1.532s] creating /home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/python3.12/site-packages/surveillance_robot
+[1.532s] copying /home/steve/ros2-surveillance-robot/build/surveillance_robot/build/lib/surveillance_robot/surveillance_manager.py -> /home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/python3.12/site-packages/surveillance_robot
+[1.532s] copying /home/steve/ros2-surveillance-robot/build/surveillance_robot/build/lib/surveillance_robot/camera_sensor.py -> /home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/python3.12/site-packages/surveillance_robot
+[1.533s] copying /home/steve/ros2-surveillance-robot/build/surveillance_robot/build/lib/surveillance_robot/anomaly_detector.py -> /home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/python3.12/site-packages/surveillance_robot
+[1.533s] copying /home/steve/ros2-surveillance-robot/build/surveillance_robot/build/lib/surveillance_robot/robot_navigator.py -> /home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/python3.12/site-packages/surveillance_robot
+[1.533s] copying /home/steve/ros2-surveillance-robot/build/surveillance_robot/build/lib/surveillance_robot/__init__.py -> /home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/python3.12/site-packages/surveillance_robot
+[1.533s] byte-compiling /home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/python3.12/site-packages/surveillance_robot/surveillance_manager.py to surveillance_manager.cpython-312.pyc
+[1.535s] byte-compiling /home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/python3.12/site-packages/surveillance_robot/camera_sensor.py to camera_sensor.cpython-312.pyc
+[1.536s] byte-compiling /home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/python3.12/site-packages/surveillance_robot/anomaly_detector.py to anomaly_detector.cpython-312.pyc
+[1.536s] byte-compiling /home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/python3.12/site-packages/surveillance_robot/robot_navigator.py to robot_navigator.cpython-312.pyc
+[1.537s] byte-compiling /home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/python3.12/site-packages/surveillance_robot/__init__.py to __init__.cpython-312.pyc
+[1.538s] running install_data
+[1.538s] creating /home/steve/ros2-surveillance-robot/install/surveillance_robot/share/ament_index
+[1.538s] creating /home/steve/ros2-surveillance-robot/install/surveillance_robot/share/ament_index/resource_index
+[1.538s] creating /home/steve/ros2-surveillance-robot/install/surveillance_robot/share/ament_index/resource_index/packages
+[1.539s] copying resource/surveillance_robot -> /home/steve/ros2-surveillance-robot/install/surveillance_robot/share/ament_index/resource_index/packages
+[1.539s] copying package.xml -> /home/steve/ros2-surveillance-robot/install/surveillance_robot/share/surveillance_robot
+[1.539s] running install_egg_info
+[1.559s] Copying ../../build/surveillance_robot/surveillance_robot.egg-info to /home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/python3.12/site-packages/surveillance_robot-0.0.1-py3.12.egg-info
+[1.560s] running install_scripts
+[1.687s] Installing anomaly_detector script to /home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/surveillance_robot
+[1.687s] Installing camera_sensor script to /home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/surveillance_robot
+[1.688s] Installing robot_navigator script to /home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/surveillance_robot
+[1.688s] Installing surveillance_manager script to /home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/surveillance_robot
+[1.688s] writing list of installed files to '/home/steve/ros2-surveillance-robot/build/surveillance_robot/install.log'
+[1.716s] Invoked command in '/home/steve/ros2-surveillance-robot/src/surveillance_robot' returned '0': PYTHONPATH=/home/steve/ros2-surveillance-robot/build/surveillance_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/surveillance_robot build --build-base /home/steve/ros2-surveillance-robot/build/surveillance_robot/build install --record /home/steve/ros2-surveillance-robot/build/surveillance_robot/install.log --single-version-externally-managed install_data
