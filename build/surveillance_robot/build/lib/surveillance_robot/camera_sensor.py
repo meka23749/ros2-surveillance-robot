@@ -1,10 +1,10 @@
 import random
 
 import cv2
-import numpy as np
-import rclpy
 from cv_bridge import CvBridge
 from geometry_msgs.msg import Pose2D
+import numpy as np
+import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
 
@@ -29,32 +29,26 @@ class CameraSensor(Node):
         cv2.rectangle(img, (50, 50), (590, 430), (150, 150, 150), 2)
         cv2.putText(img, 'Industrial Zone', (200, 40),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.7, (100, 100, 100), 2)
-
         num_objects = random.randint(2, 5)
         for _ in range(num_objects):
             x = random.randint(80, 560)
             y = random.randint(80, 400)
             cv2.circle(img, (x, y), 20, (0, 180, 0), -1)
-
         anomaly = random.random() < 0.3
         if anomaly:
             ax = random.randint(100, 500)
             ay = random.randint(100, 380)
             pts = np.array([
-                [ax, ay],
-                [ax + 40, ay + 10],
-                [ax + 20, ay + 50],
-                [ax - 10, ay + 30]
+                [ax, ay], [ax + 40, ay + 10],
+                [ax + 20, ay + 50], [ax - 10, ay + 30]
             ], np.int32)
             cv2.fillPoly(img, [pts], (0, 0, 220))
             cv2.putText(img, 'ANOMALY', (ax - 10, ay - 10),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)
-
         if self.current_pose:
             info = f'Robot: x={self.current_pose.x:.1f} y={self.current_pose.y:.1f}'
             cv2.putText(img, info, (10, 460),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.5, (50, 50, 50), 1)
-
         return img, anomaly
 
     def publish_image(self):
@@ -62,7 +56,7 @@ class CameraSensor(Node):
         msg = self.bridge.cv2_to_imgmsg(img, encoding='bgr8')
         self.image_publisher.publish(msg)
         status = 'ANOMALY in scene' if anomaly else 'Normal scene'
-        self.get_logger().info(f'Published image — {status}')
+        self.get_logger().info(f'Published image - {status}')
 
 
 def main(args=None):

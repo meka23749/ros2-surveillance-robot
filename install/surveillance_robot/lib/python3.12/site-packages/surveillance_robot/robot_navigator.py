@@ -1,7 +1,7 @@
 import math
 
-import rclpy
 from geometry_msgs.msg import Pose2D
+import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
 
@@ -31,7 +31,7 @@ class RobotNavigator(Node):
     def command_callback(self, msg):
         if msg.data == 'STOP':
             self.paused = True
-            self.get_logger().warn('Robot STOPPED — anomaly detected!')
+            self.get_logger().warn('Robot STOPPED - anomaly detected!')
         elif msg.data == 'CONTINUE':
             self.paused = False
             self.get_logger().info('Robot CONTINUING patrol')
@@ -39,21 +39,18 @@ class RobotNavigator(Node):
     def navigate(self):
         if self.paused:
             return
-
         target_x, target_y = WAYPOINTS[self.current_waypoint]
         dx = target_x - self.x
         dy = target_y - self.y
         dist = math.sqrt(dx**2 + dy**2)
-
         if dist < 0.1:
             self.current_waypoint = (self.current_waypoint + 1) % len(WAYPOINTS)
             self.get_logger().info(
-                f'Reached waypoint {self.current_waypoint} — moving to next')
+                f'Reached waypoint {self.current_waypoint} - moving to next')
         else:
             speed = 0.1
             self.x += (dx / dist) * speed
             self.y += (dy / dist) * speed
-
         pose = Pose2D()
         pose.x = self.x
         pose.y = self.y

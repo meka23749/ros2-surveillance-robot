@@ -1,0 +1,54 @@
+[0.289s] Invoking command in '/home/steve/ros2-surveillance-robot/src/surveillance_robot': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/steve/ros2-surveillance-robot/build/surveillance_robot/pytest.xml --junit-prefix=surveillance_robot -o cache_dir=/home/steve/ros2-surveillance-robot/build/surveillance_robot/.pytest_cache PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest
+[0.581s] [1m============================= test session starts ==============================[0m
+[0.581s] platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+[0.585s] cachedir: /home/steve/ros2-surveillance-robot/build/surveillance_robot/.pytest_cache
+[0.585s] rootdir: /home/steve/ros2-surveillance-robot/src/surveillance_robot
+[0.585s] plugins: ament-xmllint-0.17.5, launch-testing-3.4.11, ament-copyright-0.17.5, ament-flake8-0.17.5, launch-testing-ros-0.26.12, ament-lint-0.17.5, ament-pep257-0.17.5, colcon-core-0.20.1, cov-4.1.0
+[0.647s] [1mcollecting ... [0m[1m
+[0.647s] collected 3 items                                                              [0m
+[0.647s] 
+[0.654s] test/test_copyright.py [33ms[0m[32m                                                 [ 33%][0m
+[0.823s] test/test_flake8.py [31mF[0m[31m                                                    [ 66%][0m
+[0.848s] test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+[0.848s] 
+[0.848s] =================================== FAILURES ===================================
+[0.848s] [31m[1m_________________________________ test_flake8 __________________________________[0m
+[0.849s] [1m[31mtest/test_flake8.py[0m:23: in test_flake8
+[0.881s]     [94massert[39;49;00m rc == [94m0[39;49;00m, \
+[0.881s] [1m[31mE   AssertionError: Found 2 code style errors / warnings:[0m
+[0.881s] [1m[31mE     ./surveillance_robot/robot_navigator.py:5:1: I100 Import statements are in the wrong order. 'import rclpy' should be before 'from rclpy.node import Node'[0m
+[0.881s] [1m[31mE     ./surveillance_robot/surveillance_manager.py:5:1: I100 Import statements are in the wrong order. 'import rclpy' should be before 'from rclpy.node import Node'[0m
+[0.881s] [1m[31mE   assert 1 == 0[0m
+[0.882s] ----------------------------- Captured stdout call -----------------------------
+[0.882s] 
+[0.882s] ./surveillance_robot/robot_navigator.py:5:1: I100 Import statements are in the wrong order. 'import rclpy' should be before 'from rclpy.node import Node'
+[0.882s] import rclpy
+[0.882s] ^
+[0.882s] 
+[0.882s] ./surveillance_robot/surveillance_manager.py:5:1: I100 Import statements are in the wrong order. 'import rclpy' should be before 'from rclpy.node import Node'
+[0.882s] import rclpy
+[0.882s] ^
+[0.882s] 
+[0.882s] 2     I100 Import statements are in the wrong order. 'import rclpy' should be before 'from rclpy.node import Node'
+[0.882s] 
+[0.882s] 9 files checked
+[0.882s] 2 errors
+[0.882s] 
+[0.883s] 'I'-type errors: 2
+[0.883s] 
+[0.883s] Checked files:
+[0.883s] 
+[0.883s] * ./setup.py
+[0.883s] * ./surveillance_robot/surveillance_manager.py
+[0.883s] * ./surveillance_robot/camera_sensor.py
+[0.883s] * ./surveillance_robot/anomaly_detector.py
+[0.883s] * ./surveillance_robot/robot_navigator.py
+[0.883s] * ./surveillance_robot/__init__.py
+[0.883s] * ./test/test_pep257.py
+[0.883s] * ./test/test_copyright.py
+[0.883s] * ./test/test_flake8.py
+[0.883s] - generated xml file: /home/steve/ros2-surveillance-robot/build/surveillance_robot/pytest.xml -
+[0.883s] [36m[1m=========================== short test summary info ============================[0m
+[0.883s] [31mFAILED[0m test/test_flake8.py::[1mtest_flake8[0m - AssertionError: Found 2 code style errors / warnings:
+[0.883s] [31m==================== [31m[1m1 failed[0m, [32m1 passed[0m, [33m1 skipped[0m[31m in 0.30s[0m[31m ====================[0m
+[0.945s] Invoked command in '/home/steve/ros2-surveillance-robot/src/surveillance_robot' returned '1': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/steve/ros2-surveillance-robot/build/surveillance_robot/pytest.xml --junit-prefix=surveillance_robot -o cache_dir=/home/steve/ros2-surveillance-robot/build/surveillance_robot/.pytest_cache PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest

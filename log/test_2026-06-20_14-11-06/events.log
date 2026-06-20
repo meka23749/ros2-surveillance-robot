@@ -1,0 +1,69 @@
+[0.000000] (-) TimerEvent: {}
+[0.000186] (surveillance_robot) JobQueued: {'identifier': 'surveillance_robot', 'dependencies': OrderedDict({'surveillance_robot': '/home/steve/ros2-surveillance-robot/install/surveillance_robot'})}
+[0.000254] (surveillance_robot) JobStarted: {'identifier': 'surveillance_robot'}
+[0.099255] (-) TimerEvent: {}
+[0.199543] (-) TimerEvent: {}
+[0.285223] (surveillance_robot) Command: {'cmd': ['/usr/bin/python3', '-m', 'pytest'], 'cwd': '/home/steve/ros2-surveillance-robot/src/surveillance_robot', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'steve', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}', 'HOME': '/home/steve', 'OLDPWD': '/home/steve/ros2-surveillance-robot', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/steve/ros2-surveillance-robot/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'steve', 'NAME': 'DESKTOP-3AOGP2D', 'WSL_INTEROP': '/run/WSL/24409_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Intel/WiFi/bin/:/mnt/c/Program Files/Common Files/Intel/WirelessCommon/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/MATLAB/R2026a/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Users/Steve/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Steve/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Steve/AppData/Roaming/npm:/mnt/c/Users/Steve/opencv/build/x64/vc16/bin:/mnt/c/Program Files (x86)/Arm/GNU Toolchain mingw-w64-i686-arm-none-eabi/bin:/mnt/c/Program Files/qemu:/mnt/c/minikube:/mnt/c/kubectl:/mnt/c/Users/Steve/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Steve/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Steve/AppData/Roaming/npm:/snap/bin', 'WSL_PAC_URL': 'http://wpad.hs-esslingen.de/wpad.dat', 'WT_SESSION': 'f8f6c5ae-b118-4af5-a370-97cc1d09cb8d', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/steve/ros2-surveillance-robot/install/surveillance_robot:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/steve/ros2-surveillance-robot/build/surveillance_robot', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:', 'PYTHONDONTWRITEBYTECODE': '1', 'PYTEST_ADDOPTS': '--tb=short --junit-xml=/home/steve/ros2-surveillance-robot/build/surveillance_robot/pytest.xml --junit-prefix=surveillance_robot -o cache_dir=/home/steve/ros2-surveillance-robot/build/surveillance_robot/.pytest_cache'}, 'shell': False}
+[0.299675] (-) TimerEvent: {}
+[0.399915] (-) TimerEvent: {}
+[0.500248] (-) TimerEvent: {}
+[0.581284] (surveillance_robot) StdoutLine: {'line': b'\x1b[1m============================= test session starts ==============================\x1b[0m\n'}
+[0.581579] (surveillance_robot) StdoutLine: {'line': b'platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0\n'}
+[0.585331] (surveillance_robot) StdoutLine: {'line': b'cachedir: /home/steve/ros2-surveillance-robot/build/surveillance_robot/.pytest_cache\n'}
+[0.585485] (surveillance_robot) StdoutLine: {'line': b'rootdir: /home/steve/ros2-surveillance-robot/src/surveillance_robot\n'}
+[0.585572] (surveillance_robot) StdoutLine: {'line': b'plugins: ament-xmllint-0.17.5, launch-testing-3.4.11, ament-copyright-0.17.5, ament-flake8-0.17.5, launch-testing-ros-0.26.12, ament-lint-0.17.5, ament-pep257-0.17.5, colcon-core-0.20.1, cov-4.1.0\n'}
+[0.600350] (-) TimerEvent: {}
+[0.647044] (surveillance_robot) StdoutLine: {'line': b'\x1b[1mcollecting ... \x1b[0m\x1b[1m\n'}
+[0.647214] (surveillance_robot) StdoutLine: {'line': b'collected 3 items                                                              \x1b[0m\n'}
+[0.647393] (surveillance_robot) StdoutLine: {'line': b'\n'}
+[0.653779] (surveillance_robot) StdoutLine: {'line': b'test/test_copyright.py \x1b[33ms\x1b[0m\x1b[32m                                                 [ 33%]\x1b[0m\n'}
+[0.700430] (-) TimerEvent: {}
+[0.800724] (-) TimerEvent: {}
+[0.823367] (surveillance_robot) StdoutLine: {'line': b'test/test_flake8.py \x1b[31mF\x1b[0m\x1b[31m                                                    [ 66%]\x1b[0m\n'}
+[0.848011] (surveillance_robot) StdoutLine: {'line': b'test/test_pep257.py \x1b[32m.\x1b[0m\x1b[31m                                                    [100%]\x1b[0m\n'}
+[0.848318] (surveillance_robot) StdoutLine: {'line': b'\n'}
+[0.848613] (surveillance_robot) StdoutLine: {'line': b'=================================== FAILURES ===================================\n'}
+[0.848719] (surveillance_robot) StdoutLine: {'line': b'\x1b[31m\x1b[1m_________________________________ test_flake8 __________________________________\x1b[0m\n'}
+[0.848779] (surveillance_robot) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_flake8.py\x1b[0m:23: in test_flake8\n'}
+[0.880746] (surveillance_robot) StdoutLine: {'line': b'    \x1b[94massert\x1b[39;49;00m rc == \x1b[94m0\x1b[39;49;00m, \\\n'}
+[0.881033] (surveillance_robot) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   AssertionError: Found 2 code style errors / warnings:\x1b[0m\n'}
+[0.881243] (surveillance_robot) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./surveillance_robot/robot_navigator.py:5:1: I100 Import statements are in the wrong order. 'import rclpy' should be before 'from rclpy.node import Node'\x1b[0m\n"}
+[0.881466] (surveillance_robot) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./surveillance_robot/surveillance_manager.py:5:1: I100 Import statements are in the wrong order. 'import rclpy' should be before 'from rclpy.node import Node'\x1b[0m\n"}
+[0.881651] (surveillance_robot) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert 1 == 0\x1b[0m\n'}
+[0.881768] (surveillance_robot) StdoutLine: {'line': b'----------------------------- Captured stdout call -----------------------------\n'}
+[0.881998] (surveillance_robot) StdoutLine: {'line': b'\n'}
+[0.882066] (surveillance_robot) StdoutLine: {'line': b"./surveillance_robot/robot_navigator.py:5:1: I100 Import statements are in the wrong order. 'import rclpy' should be before 'from rclpy.node import Node'\n"}
+[0.882125] (surveillance_robot) StdoutLine: {'line': b'import rclpy\n'}
+[0.882180] (surveillance_robot) StdoutLine: {'line': b'^\n'}
+[0.882233] (surveillance_robot) StdoutLine: {'line': b'\n'}
+[0.882286] (surveillance_robot) StdoutLine: {'line': b"./surveillance_robot/surveillance_manager.py:5:1: I100 Import statements are in the wrong order. 'import rclpy' should be before 'from rclpy.node import Node'\n"}
+[0.882339] (surveillance_robot) StdoutLine: {'line': b'import rclpy\n'}
+[0.882391] (surveillance_robot) StdoutLine: {'line': b'^\n'}
+[0.882443] (surveillance_robot) StdoutLine: {'line': b'\n'}
+[0.882494] (surveillance_robot) StdoutLine: {'line': b"2     I100 Import statements are in the wrong order. 'import rclpy' should be before 'from rclpy.node import Node'\n"}
+[0.882546] (surveillance_robot) StdoutLine: {'line': b'\n'}
+[0.882598] (surveillance_robot) StdoutLine: {'line': b'9 files checked\n'}
+[0.882650] (surveillance_robot) StdoutLine: {'line': b'2 errors\n'}
+[0.882702] (surveillance_robot) StdoutLine: {'line': b'\n'}
+[0.882754] (surveillance_robot) StdoutLine: {'line': b"'I'-type errors: 2\n"}
+[0.882806] (surveillance_robot) StdoutLine: {'line': b'\n'}
+[0.882858] (surveillance_robot) StdoutLine: {'line': b'Checked files:\n'}
+[0.882909] (surveillance_robot) StdoutLine: {'line': b'\n'}
+[0.882961] (surveillance_robot) StdoutLine: {'line': b'* ./setup.py\n'}
+[0.883012] (surveillance_robot) StdoutLine: {'line': b'* ./surveillance_robot/surveillance_manager.py\n'}
+[0.883064] (surveillance_robot) StdoutLine: {'line': b'* ./surveillance_robot/camera_sensor.py\n'}
+[0.883116] (surveillance_robot) StdoutLine: {'line': b'* ./surveillance_robot/anomaly_detector.py\n'}
+[0.883169] (surveillance_robot) StdoutLine: {'line': b'* ./surveillance_robot/robot_navigator.py\n'}
+[0.883221] (surveillance_robot) StdoutLine: {'line': b'* ./surveillance_robot/__init__.py\n'}
+[0.883272] (surveillance_robot) StdoutLine: {'line': b'* ./test/test_pep257.py\n'}
+[0.883325] (surveillance_robot) StdoutLine: {'line': b'* ./test/test_copyright.py\n'}
+[0.883376] (surveillance_robot) StdoutLine: {'line': b'* ./test/test_flake8.py\n'}
+[0.883427] (surveillance_robot) StdoutLine: {'line': b'- generated xml file: /home/steve/ros2-surveillance-robot/build/surveillance_robot/pytest.xml -\n'}
+[0.883542] (surveillance_robot) StdoutLine: {'line': b'\x1b[36m\x1b[1m=========================== short test summary info ============================\x1b[0m\n'}
+[0.883600] (surveillance_robot) StdoutLine: {'line': b'\x1b[31mFAILED\x1b[0m test/test_flake8.py::\x1b[1mtest_flake8\x1b[0m - AssertionError: Found 2 code style errors / warnings:\n'}
+[0.883654] (surveillance_robot) StdoutLine: {'line': b'\x1b[31m==================== \x1b[31m\x1b[1m1 failed\x1b[0m, \x1b[32m1 passed\x1b[0m, \x1b[33m1 skipped\x1b[0m\x1b[31m in 0.30s\x1b[0m\x1b[31m ====================\x1b[0m\n'}
+[0.900882] (-) TimerEvent: {}
+[0.945318] (surveillance_robot) CommandEnded: {'returncode': 1}
+[0.945682] (surveillance_robot) TestFailure: {'identifier': 'surveillance_robot'}
+[0.945705] (surveillance_robot) JobEnded: {'identifier': 'surveillance_robot', 'rc': 0}
+[0.946776] (-) EventReactorShutdown: {}

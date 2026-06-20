@@ -1,0 +1,52 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+cachedir: /home/steve/ros2-surveillance-robot/build/surveillance_robot/.pytest_cache
+rootdir: /home/steve/ros2-surveillance-robot/src/surveillance_robot
+plugins: ament-xmllint-0.17.5, launch-testing-3.4.11, ament-copyright-0.17.5, ament-flake8-0.17.5, launch-testing-ros-0.26.12, ament-lint-0.17.5, ament-pep257-0.17.5, colcon-core-0.20.1, cov-4.1.0
+[1mcollecting ... [0m[1m
+collected 3 items                                                              [0m
+
+test/test_copyright.py [33ms[0m[32m                                                 [ 33%][0m
+test/test_flake8.py [31mF[0m[31m                                                    [ 66%][0m
+test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+
+=================================== FAILURES ===================================
+[31m[1m_________________________________ test_flake8 __________________________________[0m
+[1m[31mtest/test_flake8.py[0m:23: in test_flake8
+    [94massert[39;49;00m rc == [94m0[39;49;00m, \
+[1m[31mE   AssertionError: Found 2 code style errors / warnings:[0m
+[1m[31mE     ./surveillance_robot/robot_navigator.py:5:1: I100 Import statements are in the wrong order. 'import rclpy' should be before 'from rclpy.node import Node'[0m
+[1m[31mE     ./surveillance_robot/surveillance_manager.py:5:1: I100 Import statements are in the wrong order. 'import rclpy' should be before 'from rclpy.node import Node'[0m
+[1m[31mE   assert 1 == 0[0m
+----------------------------- Captured stdout call -----------------------------
+
+./surveillance_robot/robot_navigator.py:5:1: I100 Import statements are in the wrong order. 'import rclpy' should be before 'from rclpy.node import Node'
+import rclpy
+^
+
+./surveillance_robot/surveillance_manager.py:5:1: I100 Import statements are in the wrong order. 'import rclpy' should be before 'from rclpy.node import Node'
+import rclpy
+^
+
+2     I100 Import statements are in the wrong order. 'import rclpy' should be before 'from rclpy.node import Node'
+
+9 files checked
+2 errors
+
+'I'-type errors: 2
+
+Checked files:
+
+* ./setup.py
+* ./surveillance_robot/surveillance_manager.py
+* ./surveillance_robot/camera_sensor.py
+* ./surveillance_robot/anomaly_detector.py
+* ./surveillance_robot/robot_navigator.py
+* ./surveillance_robot/__init__.py
+* ./test/test_pep257.py
+* ./test/test_copyright.py
+* ./test/test_flake8.py
+- generated xml file: /home/steve/ros2-surveillance-robot/build/surveillance_robot/pytest.xml -
+[36m[1m=========================== short test summary info ============================[0m
+[31mFAILED[0m test/test_flake8.py::[1mtest_flake8[0m - AssertionError: Found 2 code style errors / warnings:
+[31m==================== [31m[1m1 failed[0m, [32m1 passed[0m, [33m1 skipped[0m[31m in 0.30s[0m[31m ====================[0m

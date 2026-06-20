@@ -1,0 +1,119 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+cachedir: /home/steve/ros2-surveillance-robot/build/surveillance_robot/.pytest_cache
+rootdir: /home/steve/ros2-surveillance-robot/src/surveillance_robot
+plugins: ament-xmllint-0.17.5, launch-testing-3.4.11, ament-copyright-0.17.5, ament-flake8-0.17.5, launch-testing-ros-0.26.12, ament-lint-0.17.5, ament-pep257-0.17.5, colcon-core-0.20.1, cov-4.1.0
+[1mcollecting ... [0m[1m
+collected 3 items                                                              [0m
+
+test/test_copyright.py [33ms[0m[32m                                                 [ 33%][0m
+test/test_flake8.py [31mF[0m[31m                                                    [ 66%][0m
+test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+
+=================================== FAILURES ===================================
+[31m[1m_________________________________ test_flake8 __________________________________[0m
+[1m[31mtest/test_flake8.py[0m:23: in test_flake8
+    [94massert[39;49;00m rc == [94m0[39;49;00m, \
+[1m[31mE   AssertionError: Found 15 code style errors / warnings:[0m
+[1m[31mE     ./setup.py:2:1: I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'[0m
+[1m[31mE     ./surveillance_robot/anomaly_detector.py:6:1: I100 Import statements are in the wrong order. 'from cv_bridge import CvBridge' should be before 'import rclpy'[0m
+[1m[31mE     ./surveillance_robot/camera_sensor.py:6:1: I100 Import statements are in the wrong order. 'from cv_bridge import CvBridge' should be before 'import rclpy'[0m
+[1m[31mE     ./surveillance_robot/robot_navigator.py:5:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Pose2D' should be before 'import rclpy'[0m
+[1m[31mE     ./surveillance_robot/robot_navigator.py:21:26: Q000 Double quotes found but single quotes preferred[0m
+[1m[31mE     ./surveillance_robot/robot_navigator.py:22:61: Q000 Double quotes found but single quotes preferred[0m
+[1m[31mE     ./surveillance_robot/robot_navigator.py:24:21: Q000 Double quotes found but single quotes preferred[0m
+[1m[31mE     ./surveillance_robot/robot_navigator.py:30:32: Q000 Double quotes found but single quotes preferred[0m
+[1m[31mE     ./surveillance_robot/robot_navigator.py:33:24: Q000 Double quotes found but single quotes preferred[0m
+[1m[31mE     ./surveillance_robot/robot_navigator.py:35:26: Q000 Double quotes found but single quotes preferred[0m
+[1m[31mE     ./surveillance_robot/robot_navigator.py:37:36: Q000 Double quotes found but single quotes preferred[0m
+[1m[31mE     ./surveillance_robot/robot_navigator.py:49:17: Q000 Double quotes found but single quotes preferred[0m
+[1m[31mE     ./surveillance_robot/robot_navigator.py:59:32: Q000 Double quotes found but single quotes preferred[0m
+[1m[31mE     ./surveillance_robot/robot_navigator.py:70:16: Q000 Double quotes found but single quotes preferred[0m
+[1m[31mE     ./surveillance_robot/surveillance_manager.py:4:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Pose2D' should be before 'import rclpy'[0m
+[1m[31mE   assert 1 == 0[0m
+----------------------------- Captured stdout call -----------------------------
+
+./setup.py:2:1: I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'
+from glob import glob
+^
+
+./surveillance_robot/anomaly_detector.py:6:1: I100 Import statements are in the wrong order. 'from cv_bridge import CvBridge' should be before 'import rclpy'
+from cv_bridge import CvBridge
+^
+
+./surveillance_robot/camera_sensor.py:6:1: I100 Import statements are in the wrong order. 'from cv_bridge import CvBridge' should be before 'import rclpy'
+from cv_bridge import CvBridge
+^
+
+./surveillance_robot/robot_navigator.py:5:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Pose2D' should be before 'import rclpy'
+from geometry_msgs.msg import Pose2D
+^
+
+./surveillance_robot/robot_navigator.py:21:26: Q000 Double quotes found but single quotes preferred
+        super().__init__("robot_navigator")
+                         ^
+
+./surveillance_robot/robot_navigator.py:22:61: Q000 Double quotes found but single quotes preferred
+        self.pose_publisher = self.create_publisher(Pose2D, "/robot/pose", 10)
+                                                            ^
+
+./surveillance_robot/robot_navigator.py:24:21: Q000 Double quotes found but single quotes preferred
+            String, "/robot/command", self.command_callback, 10)
+                    ^
+
+./surveillance_robot/robot_navigator.py:30:32: Q000 Double quotes found but single quotes preferred
+        self.get_logger().info("Robot Navigator started")
+                               ^
+
+./surveillance_robot/robot_navigator.py:33:24: Q000 Double quotes found but single quotes preferred
+        if msg.data == "STOP":
+                       ^
+
+./surveillance_robot/robot_navigator.py:35:26: Q000 Double quotes found but single quotes preferred
+        elif msg.data == "CONTINUE":
+                         ^
+
+./surveillance_robot/robot_navigator.py:37:36: Q000 Double quotes found but single quotes preferred
+            self.get_logger().info("Robot CONTINUING patrol")
+                                   ^
+
+./surveillance_robot/robot_navigator.py:49:17: Q000 Double quotes found but single quotes preferred
+                f"Reached waypoint {self.current_waypoint} — moving to next")
+                ^
+
+./surveillance_robot/robot_navigator.py:59:32: Q000 Double quotes found but single quotes preferred
+        self.get_logger().info(f"Position: x={self.x:.2f} y={self.y:.2f}")
+                               ^
+
+./surveillance_robot/robot_navigator.py:70:16: Q000 Double quotes found but single quotes preferred
+if __name__ == "__main__":
+               ^
+
+./surveillance_robot/surveillance_manager.py:4:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Pose2D' should be before 'import rclpy'
+from geometry_msgs.msg import Pose2D
+^
+
+5     I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'
+10    Q000 Double quotes found but single quotes preferred
+
+9 files checked
+15 errors
+
+'I'-type errors: 5
+'Q'-type errors: 10
+
+Checked files:
+
+* ./setup.py
+* ./surveillance_robot/surveillance_manager.py
+* ./surveillance_robot/camera_sensor.py
+* ./surveillance_robot/anomaly_detector.py
+* ./surveillance_robot/robot_navigator.py
+* ./surveillance_robot/__init__.py
+* ./test/test_pep257.py
+* ./test/test_copyright.py
+* ./test/test_flake8.py
+- generated xml file: /home/steve/ros2-surveillance-robot/build/surveillance_robot/pytest.xml -
+[36m[1m=========================== short test summary info ============================[0m
+[31mFAILED[0m test/test_flake8.py::[1mtest_flake8[0m - AssertionError: Found 15 code style errors / warnings:
+[31m==================== [31m[1m1 failed[0m, [32m1 passed[0m, [33m1 skipped[0m[31m in 0.40s[0m[31m ====================[0m

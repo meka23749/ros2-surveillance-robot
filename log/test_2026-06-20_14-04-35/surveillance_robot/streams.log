@@ -1,0 +1,81 @@
+[0.286s] Invoking command in '/home/steve/ros2-surveillance-robot/src/surveillance_robot': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/steve/ros2-surveillance-robot/build/surveillance_robot/pytest.xml --junit-prefix=surveillance_robot -o cache_dir=/home/steve/ros2-surveillance-robot/build/surveillance_robot/.pytest_cache PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest
+[0.589s] [1m============================= test session starts ==============================[0m
+[0.590s] platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+[0.594s] cachedir: /home/steve/ros2-surveillance-robot/build/surveillance_robot/.pytest_cache
+[0.594s] rootdir: /home/steve/ros2-surveillance-robot/src/surveillance_robot
+[0.594s] plugins: ament-xmllint-0.17.5, launch-testing-3.4.11, ament-copyright-0.17.5, ament-flake8-0.17.5, launch-testing-ros-0.26.12, ament-lint-0.17.5, ament-pep257-0.17.5, colcon-core-0.20.1, cov-4.1.0
+[0.659s] [1mcollecting ... [0m[1m
+[0.659s] collected 3 items                                                              [0m
+[0.659s] 
+[0.666s] test/test_copyright.py [33ms[0m[32m                                                 [ 33%][0m
+[0.827s] test/test_flake8.py [31mF[0m[31m                                                    [ 66%][0m
+[0.851s] test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+[0.851s] 
+[0.851s] =================================== FAILURES ===================================
+[0.851s] [31m[1m_________________________________ test_flake8 __________________________________[0m
+[0.851s] [1m[31mtest/test_flake8.py[0m:23: in test_flake8
+[0.884s]     [94massert[39;49;00m rc == [94m0[39;49;00m, \
+[0.884s] [1m[31mE   AssertionError: Found 7 code style errors / warnings:[0m
+[0.884s] [1m[31mE     ./surveillance_robot/anomaly_detector.py:7:1: I100 Import statements are in the wrong order. 'import cv2' should be before 'from std_msgs.msg import String'[0m
+[0.884s] [1m[31mE     ./surveillance_robot/anomaly_detector.py:11:1: E302 expected 2 blank lines, found 1[0m
+[0.885s] [1m[31mE     ./surveillance_robot/camera_sensor.py:7:1: I100 Import statements are in the wrong order. 'import cv2' should be before 'from sensor_msgs.msg import Image'[0m
+[0.885s] [1m[31mE     ./surveillance_robot/camera_sensor.py:11:1: E302 expected 2 blank lines, found 1[0m
+[0.885s] [1m[31mE     ./surveillance_robot/robot_navigator.py:6:1: I100 Import statements are in the wrong order. 'import rclpy' should be before 'from std_msgs.msg import String'[0m
+[0.885s] [1m[31mE     ./surveillance_robot/surveillance_manager.py:6:1: I100 Import statements are in the wrong order. 'import rclpy' should be before 'from std_msgs.msg import String'[0m
+[0.885s] [1m[31mE     ./surveillance_robot/surveillance_manager.py:8:1: E302 expected 2 blank lines, found 1[0m
+[0.885s] [1m[31mE   assert 1 == 0[0m
+[0.885s] ----------------------------- Captured stdout call -----------------------------
+[0.885s] 
+[0.885s] ./surveillance_robot/anomaly_detector.py:7:1: I100 Import statements are in the wrong order. 'import cv2' should be before 'from std_msgs.msg import String'
+[0.885s] import cv2
+[0.885s] ^
+[0.885s] 
+[0.885s] ./surveillance_robot/anomaly_detector.py:11:1: E302 expected 2 blank lines, found 1
+[0.885s] class AnomalyDetector(Node):
+[0.885s] ^
+[0.885s] 
+[0.885s] ./surveillance_robot/camera_sensor.py:7:1: I100 Import statements are in the wrong order. 'import cv2' should be before 'from sensor_msgs.msg import Image'
+[0.885s] import cv2
+[0.885s] ^
+[0.886s] 
+[0.886s] ./surveillance_robot/camera_sensor.py:11:1: E302 expected 2 blank lines, found 1
+[0.886s] class CameraSensor(Node):
+[0.886s] ^
+[0.886s] 
+[0.886s] ./surveillance_robot/robot_navigator.py:6:1: I100 Import statements are in the wrong order. 'import rclpy' should be before 'from std_msgs.msg import String'
+[0.886s] import rclpy
+[0.886s] ^
+[0.886s] 
+[0.886s] ./surveillance_robot/surveillance_manager.py:6:1: I100 Import statements are in the wrong order. 'import rclpy' should be before 'from std_msgs.msg import String'
+[0.886s] import rclpy
+[0.886s] ^
+[0.886s] 
+[0.886s] ./surveillance_robot/surveillance_manager.py:8:1: E302 expected 2 blank lines, found 1
+[0.886s] class SurveillanceManager(Node):
+[0.887s] ^
+[0.887s] 
+[0.887s] 3     E302 expected 2 blank lines, found 1
+[0.887s] 4     I100 Import statements are in the wrong order. 'import cv2' should be before 'from std_msgs.msg import String'
+[0.887s] 
+[0.887s] 9 files checked
+[0.887s] 7 errors
+[0.887s] 
+[0.887s] 'E'-type errors: 3
+[0.887s] 'I'-type errors: 4
+[0.887s] 
+[0.888s] Checked files:
+[0.888s] 
+[0.888s] * ./setup.py
+[0.888s] * ./surveillance_robot/surveillance_manager.py
+[0.888s] * ./surveillance_robot/camera_sensor.py
+[0.888s] * ./surveillance_robot/anomaly_detector.py
+[0.888s] * ./surveillance_robot/robot_navigator.py
+[0.888s] * ./surveillance_robot/__init__.py
+[0.888s] * ./test/test_pep257.py
+[0.888s] * ./test/test_copyright.py
+[0.888s] * ./test/test_flake8.py
+[0.888s] - generated xml file: /home/steve/ros2-surveillance-robot/build/surveillance_robot/pytest.xml -
+[0.889s] [36m[1m=========================== short test summary info ============================[0m
+[0.889s] [31mFAILED[0m test/test_flake8.py::[1mtest_flake8[0m - AssertionError: Found 7 code style errors / warnings:
+[0.889s] [31m==================== [31m[1m1 failed[0m, [32m1 passed[0m, [33m1 skipped[0m[31m in 0.29s[0m[31m ====================[0m
+[0.953s] Invoked command in '/home/steve/ros2-surveillance-robot/src/surveillance_robot' returned '1': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/steve/ros2-surveillance-robot/build/surveillance_robot/pytest.xml --junit-prefix=surveillance_robot -o cache_dir=/home/steve/ros2-surveillance-robot/build/surveillance_robot/.pytest_cache PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest

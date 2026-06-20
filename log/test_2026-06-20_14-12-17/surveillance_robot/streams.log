@@ -1,0 +1,16 @@
+[0.321s] Invoking command in '/home/steve/ros2-surveillance-robot/src/surveillance_robot': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/steve/ros2-surveillance-robot/build/surveillance_robot/pytest.xml --junit-prefix=surveillance_robot -o cache_dir=/home/steve/ros2-surveillance-robot/build/surveillance_robot/.pytest_cache PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest
+[0.616s] [1m============================= test session starts ==============================[0m
+[0.616s] platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+[0.620s] cachedir: /home/steve/ros2-surveillance-robot/build/surveillance_robot/.pytest_cache
+[0.620s] rootdir: /home/steve/ros2-surveillance-robot/src/surveillance_robot
+[0.620s] plugins: ament-xmllint-0.17.5, launch-testing-3.4.11, ament-copyright-0.17.5, ament-flake8-0.17.5, launch-testing-ros-0.26.12, ament-lint-0.17.5, ament-pep257-0.17.5, colcon-core-0.20.1, cov-4.1.0
+[0.682s] [1mcollecting ... [0m[1m
+[0.682s] collected 3 items                                                              [0m
+[0.683s] 
+[0.689s] test/test_copyright.py [33ms[0m[32m                                                 [ 33%][0m
+[0.825s] test/test_flake8.py [32m.[0m[32m                                                    [ 66%][0m
+[0.849s] test/test_pep257.py [32m.[0m[32m                                                    [100%][0m
+[0.849s] 
+[0.849s] - generated xml file: /home/steve/ros2-surveillance-robot/build/surveillance_robot/pytest.xml -
+[0.849s] [32m========================= [32m[1m2 passed[0m, [33m1 skipped[0m[32m in 0.23s[0m[32m =========================[0m
+[0.909s] Invoked command in '/home/steve/ros2-surveillance-robot/src/surveillance_robot' returned '0': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/steve/ros2-surveillance-robot/build/surveillance_robot/pytest.xml --junit-prefix=surveillance_robot -o cache_dir=/home/steve/ros2-surveillance-robot/build/surveillance_robot/.pytest_cache PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest

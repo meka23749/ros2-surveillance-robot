@@ -1,0 +1,69 @@
+[0.276s] Invoking command in '/home/steve/ros2-surveillance-robot/src/surveillance_robot': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/steve/ros2-surveillance-robot/build/surveillance_robot/pytest.xml --junit-prefix=surveillance_robot -o cache_dir=/home/steve/ros2-surveillance-robot/build/surveillance_robot/.pytest_cache PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest
+[0.574s] [1m============================= test session starts ==============================[0m
+[0.574s] platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+[0.578s] cachedir: /home/steve/ros2-surveillance-robot/build/surveillance_robot/.pytest_cache
+[0.578s] rootdir: /home/steve/ros2-surveillance-robot/src/surveillance_robot
+[0.578s] plugins: ament-xmllint-0.17.5, launch-testing-3.4.11, ament-copyright-0.17.5, ament-flake8-0.17.5, launch-testing-ros-0.26.12, ament-lint-0.17.5, ament-pep257-0.17.5, colcon-core-0.20.1, cov-4.1.0
+[0.642s] [1mcollecting ... [0m[1m
+[0.642s] collected 3 items                                                              [0m
+[0.643s] 
+[0.649s] test/test_copyright.py [33ms[0m[32m                                                 [ 33%][0m
+[0.805s] test/test_flake8.py [31mF[0m[31m                                                    [ 66%][0m
+[0.828s] test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+[0.828s] 
+[0.828s] =================================== FAILURES ===================================
+[0.828s] [31m[1m_________________________________ test_flake8 __________________________________[0m
+[0.828s] [1m[31mtest/test_flake8.py[0m:23: in test_flake8
+[0.860s]     [94massert[39;49;00m rc == [94m0[39;49;00m, \
+[0.860s] [1m[31mE   AssertionError: Found 5 code style errors / warnings:[0m
+[0.860s] [1m[31mE     ./setup.py:2:1: I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'[0m
+[0.860s] [1m[31mE     ./surveillance_robot/anomaly_detector.py:6:1: I100 Import statements are in the wrong order. 'from cv_bridge import CvBridge' should be before 'import rclpy'[0m
+[0.860s] [1m[31mE     ./surveillance_robot/camera_sensor.py:6:1: I100 Import statements are in the wrong order. 'from cv_bridge import CvBridge' should be before 'import rclpy'[0m
+[0.860s] [1m[31mE     ./surveillance_robot/robot_navigator.py:4:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Pose2D' should be before 'import rclpy'[0m
+[0.860s] [1m[31mE     ./surveillance_robot/surveillance_manager.py:4:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Pose2D' should be before 'import rclpy'[0m
+[0.861s] [1m[31mE   assert 1 == 0[0m
+[0.861s] ----------------------------- Captured stdout call -----------------------------
+[0.861s] 
+[0.861s] ./setup.py:2:1: I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'
+[0.861s] from glob import glob
+[0.861s] ^
+[0.861s] 
+[0.862s] ./surveillance_robot/anomaly_detector.py:6:1: I100 Import statements are in the wrong order. 'from cv_bridge import CvBridge' should be before 'import rclpy'
+[0.862s] from cv_bridge import CvBridge
+[0.862s] ^
+[0.862s] 
+[0.862s] ./surveillance_robot/camera_sensor.py:6:1: I100 Import statements are in the wrong order. 'from cv_bridge import CvBridge' should be before 'import rclpy'
+[0.862s] from cv_bridge import CvBridge
+[0.862s] ^
+[0.862s] 
+[0.862s] ./surveillance_robot/robot_navigator.py:4:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Pose2D' should be before 'import rclpy'
+[0.862s] from geometry_msgs.msg import Pose2D
+[0.862s] ^
+[0.862s] 
+[0.862s] ./surveillance_robot/surveillance_manager.py:4:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Pose2D' should be before 'import rclpy'
+[0.862s] from geometry_msgs.msg import Pose2D
+[0.862s] ^
+[0.862s] 
+[0.862s] 5     I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'
+[0.862s] 
+[0.863s] 9 files checked
+[0.863s] 5 errors
+[0.863s] 
+[0.863s] 'I'-type errors: 5
+[0.863s] 
+[0.863s] Checked files:
+[0.863s] 
+[0.863s] * ./setup.py
+[0.863s] * ./surveillance_robot/surveillance_manager.py
+[0.863s] * ./surveillance_robot/camera_sensor.py
+[0.863s] * ./surveillance_robot/anomaly_detector.py
+[0.863s] * ./surveillance_robot/robot_navigator.py
+[0.863s] * ./surveillance_robot/__init__.py
+[0.863s] * ./test/test_pep257.py
+[0.863s] * ./test/test_copyright.py
+[0.864s] * ./test/test_flake8.py
+[0.864s] - generated xml file: /home/steve/ros2-surveillance-robot/build/surveillance_robot/pytest.xml -
+[0.864s] [36m[1m=========================== short test summary info ============================[0m
+[0.864s] [31mFAILED[0m test/test_flake8.py::[1mtest_flake8[0m - AssertionError: Found 5 code style errors / warnings:
+[0.864s] [31m==================== [31m[1m1 failed[0m, [32m1 passed[0m, [33m1 skipped[0m[31m in 0.29s[0m[31m ====================[0m
+[0.926s] Invoked command in '/home/steve/ros2-surveillance-robot/src/surveillance_robot' returned '1': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/steve/ros2-surveillance-robot/build/surveillance_robot/pytest.xml --junit-prefix=surveillance_robot -o cache_dir=/home/steve/ros2-surveillance-robot/build/surveillance_robot/.pytest_cache PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest
