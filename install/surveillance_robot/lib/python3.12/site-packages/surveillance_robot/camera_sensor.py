@@ -1,11 +1,12 @@
+import random
+
+import cv2
+import numpy as np
 import rclpy
+from cv_bridge import CvBridge
+from geometry_msgs.msg import Pose2D
 from rclpy.node import Node
 from sensor_msgs.msg import Image
-from geometry_msgs.msg import Pose2D
-import numpy as np
-import cv2
-from cv_bridge import CvBridge
-import random
 
 
 class CameraSensor(Node):
@@ -25,7 +26,6 @@ class CameraSensor(Node):
 
     def generate_scene(self):
         img = np.ones((480, 640, 3), dtype=np.uint8) * 200
-
         cv2.rectangle(img, (50, 50), (590, 430), (150, 150, 150), 2)
         cv2.putText(img, 'Industrial Zone', (200, 40),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.7, (100, 100, 100), 2)

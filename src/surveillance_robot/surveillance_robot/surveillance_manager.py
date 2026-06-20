@@ -1,8 +1,9 @@
+import json
+
 import rclpy
+from geometry_msgs.msg import Pose2D
 from rclpy.node import Node
 from std_msgs.msg import String
-from geometry_msgs.msg import Pose2D
-import json
 
 
 class SurveillanceManager(Node):
@@ -36,7 +37,8 @@ class SurveillanceManager(Node):
 
             pos_info = ''
             if self.current_pose:
-                pos_info = f' at x={self.current_pose.x:.2f} y={self.current_pose.y:.2f}'
+                pos_info = (
+                    f' at x={self.current_pose.x:.2f} y={self.current_pose.y:.2f}')
 
             self.get_logger().warn(
                 f'AUTONOMOUS DECISION: STOP robot{pos_info} — '
@@ -48,7 +50,8 @@ class SurveillanceManager(Node):
             command.data = 'CONTINUE'
             self.command_publisher.publish(command)
             self.robot_stopped = False
-            self.get_logger().info('AUTONOMOUS DECISION: CONTINUE patrol — zone clear')
+            self.get_logger().info(
+                'AUTONOMOUS DECISION: CONTINUE patrol — zone clear')
 
         rate = (self.anomaly_count / self.total_detections * 100
                 if self.total_detections > 0 else 0)

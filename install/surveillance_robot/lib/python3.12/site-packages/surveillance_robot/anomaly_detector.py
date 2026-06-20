@@ -1,11 +1,12 @@
+import json
+
+import cv2
+import numpy as np
 import rclpy
+from cv_bridge import CvBridge
 from rclpy.node import Node
 from sensor_msgs.msg import Image
 from std_msgs.msg import String
-import numpy as np
-import cv2
-from cv_bridge import CvBridge
-import json
 
 
 class AnomalyDetector(Node):
@@ -33,7 +34,8 @@ class AnomalyDetector(Node):
         kernel = np.ones((5, 5), np.uint8)
         mask = cv2.morphologyEx(mask, cv2.MORPH_OPEN, kernel)
 
-        contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        contours, _ = cv2.findContours(
+            mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
         anomaly_found = False
         confidence = 0.0
