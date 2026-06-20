@@ -27,7 +27,7 @@ class SurveillanceManager(Node):
         result = json.loads(msg.data)
         self.total_detections += 1
 
-        if result['anomaly_found'] and result['confidence'] > 0.5:
+        if result['anomaly_found'] and result['confidence'] > 0.3:
             self.anomaly_count += 1
             command = String()
             command.data = 'STOP'

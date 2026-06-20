@@ -1,0 +1,27 @@
+[0.799s] Invoking command in '/home/steve/ros2-surveillance-robot/src/surveillance_robot': PYTHONPATH=/home/steve/ros2-surveillance-robot/build/surveillance_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/surveillance_robot build --build-base /home/steve/ros2-surveillance-robot/build/surveillance_robot/build install --record /home/steve/ros2-surveillance-robot/build/surveillance_robot/install.log --single-version-externally-managed install_data
+[1.058s] running egg_info
+[1.077s] writing ../../build/surveillance_robot/surveillance_robot.egg-info/PKG-INFO
+[1.077s] writing dependency_links to ../../build/surveillance_robot/surveillance_robot.egg-info/dependency_links.txt
+[1.078s] writing entry points to ../../build/surveillance_robot/surveillance_robot.egg-info/entry_points.txt
+[1.078s] writing requirements to ../../build/surveillance_robot/surveillance_robot.egg-info/requires.txt
+[1.078s] writing top-level names to ../../build/surveillance_robot/surveillance_robot.egg-info/top_level.txt
+[1.118s] reading manifest file '../../build/surveillance_robot/surveillance_robot.egg-info/SOURCES.txt'
+[1.119s] writing manifest file '../../build/surveillance_robot/surveillance_robot.egg-info/SOURCES.txt'
+[1.120s] running build
+[1.120s] running build_py
+[1.120s] copying surveillance_robot/surveillance_manager.py -> /home/steve/ros2-surveillance-robot/build/surveillance_robot/build/lib/surveillance_robot
+[1.120s] running install
+[1.126s] running install_lib
+[1.145s] copying /home/steve/ros2-surveillance-robot/build/surveillance_robot/build/lib/surveillance_robot/surveillance_manager.py -> /home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/python3.12/site-packages/surveillance_robot
+[1.146s] byte-compiling /home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/python3.12/site-packages/surveillance_robot/surveillance_manager.py to surveillance_manager.cpython-312.pyc
+[1.147s] running install_data
+[1.147s] running install_egg_info
+[1.168s] removing '/home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/python3.12/site-packages/surveillance_robot-0.0.1-py3.12.egg-info' (and everything under it)
+[1.169s] Copying ../../build/surveillance_robot/surveillance_robot.egg-info to /home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/python3.12/site-packages/surveillance_robot-0.0.1-py3.12.egg-info
+[1.170s] running install_scripts
+[1.300s] Installing anomaly_detector script to /home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/surveillance_robot
+[1.301s] Installing camera_sensor script to /home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/surveillance_robot
+[1.301s] Installing robot_navigator script to /home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/surveillance_robot
+[1.301s] Installing surveillance_manager script to /home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/surveillance_robot
+[1.302s] writing list of installed files to '/home/steve/ros2-surveillance-robot/build/surveillance_robot/install.log'
+[1.331s] Invoked command in '/home/steve/ros2-surveillance-robot/src/surveillance_robot' returned '0': PYTHONPATH=/home/steve/ros2-surveillance-robot/build/surveillance_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/steve/ros2-surveillance-robot/install/surveillance_robot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/surveillance_robot build --build-base /home/steve/ros2-surveillance-robot/build/surveillance_robot/build install --record /home/steve/ros2-surveillance-robot/build/surveillance_robot/install.log --single-version-externally-managed install_data
