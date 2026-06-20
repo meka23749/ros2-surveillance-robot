@@ -30,6 +30,7 @@ setup(
             'anomaly_detector = surveillance_robot.anomaly_detector:main',
             'surveillance_manager = surveillance_robot.surveillance_manager:main',
             'visualizer = surveillance_robot.visualizer:main',
+            'rviz_publisher = surveillance_robot.rviz_publisher:main',
         ],
     },
 )

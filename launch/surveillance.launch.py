@@ -34,4 +34,10 @@ def generate_launch_description():
             name='visualizer',
             output='screen'
         ),
+        Node(
+            package='surveillance_robot',
+            executable='rviz_publisher',
+            name='rviz_publisher',
+            output='screen'
+        ),
     ])
